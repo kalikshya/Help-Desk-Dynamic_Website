@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #CAF0F8; 
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0077B6;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form Box */
+.contact-container {
+    background-color: white;
+    max-width: 450px;
+    margin: 60px auto;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contact-container h2 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 24px;
+}
+
+.contact-container label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.contact-container button {
+    background-color: #0077FF;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-container button:hover {
+    background-color: #005ecb;
+}
+
+/* Footer */
+.footer {
+    background-color: #0077B6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Responsive Design*/
+@media screen and (max-width: 768px) {
+    .contact-container {
+        width: 90%;
+        margin: 40px auto;
+        padding: 20px 15px;
+    }
+
+    .contact-container h2 {
+        font-size: 20px;
+    }
+
+    .contact-container label {
+        font-size: 14px;
+    }
+
+    .contact-container input,
+    .contact-container textarea {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    .contact-container button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        margin-left: 12px;
+    }
+
+    .footer {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+

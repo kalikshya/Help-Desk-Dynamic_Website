@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #CAF0F8;
+}
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #0077B6;
+    color: white;
+    padding: 30px 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #023E8A;
+    font-weight: bold;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+.content h1 {
+    color: #023E8A;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.profile-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+}
+
+.profile-info {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.profile-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.edit-section {
+    flex: 1;
+}
+
+.edit-section h3 {
+    margin-bottom: 15px;
+    color: #0077B6;
+}
+
+.edit-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    font-size: 14px;
+}
+
+.edit-section button {
+    background-color: #0077B6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.edit-section button:hover {
+    background-color: #023E8A;
+}
+
+/* Footer */
+.footer {
+    background-color: #0077B6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .profile-box {
+        flex-direction: column;
+    }
+
+    .profile-info {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

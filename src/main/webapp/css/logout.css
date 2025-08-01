@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #CAF0F8;
+}
+
+/* Confirmation Dialog */
+.confirm-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-box {
+    background-color: white;
+    padding: 30px 40px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.confirm-box h2 {
+    color: #0077B6;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-group button {
+    margin: 10px;
+    padding: 10px 18px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-group button:first-child {
+    background-color: #0077B6;
+}
+
+.btn-group button:first-child:hover {
+    background-color: #023E8A;
+}
+
+.btn-group button:last-child {
+    background-color: gray;
+}
+
+.btn-group button:last-child:hover {
+    background-color: #555;
+}
+
+
+/* Logout Message */
+.message-container {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-box {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 500px;
+}
+
+.logout-icon {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.message-box h2 {
+    color: #0077B6;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.message-box p {
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.login-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077B6;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.login-btn:hover {
+    background-color: #023E8A;
+}
+
+/* Footer */
+.footer {
+    background-color: #0077B6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .confirm-box,
+    .message-box {
+        padding: 20px;
+    }
+
+    .logout-icon {
+        width: 60px;
+    }
+
+    .btn-group button {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+}

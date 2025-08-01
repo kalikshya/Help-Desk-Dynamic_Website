@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #CAF0F8;
+}
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #0077B6;
+    color: white;
+    padding: 30px 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #023E8A;
+    font-weight: bold;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #CAF0F8;
+}
+
+h1 {
+    color: #023E8A;
+    font-size: 28pxc;
+    margin-bottom: 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-form input {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.search-form button,
+.add-btn {
+    background-color: #0077B6;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-form button:hover,
+.add-btn:hover {
+    background-color: #023E8A;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+th {
+    background-color: #0077B6;
+    color: white;
+    padding: 12px;
+    font-size: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Footer */
+.footer {
+    background-color: #0077B6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add User Form Styling */
+#addUserForm {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+#addUserForm h3 {
+    font-size: 20px;
+    color: #0077B6;
+    margin-bottom: 15px;
+}
+
+#addUserForm input {
+    width: 100%;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+#addUserForm button[type="submit"] {
+    background-color: #0077B6;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addUserForm button[type="submit"]:hover {
+    background-color: #023E8A;
+}
+
+/* Responsive Form */
+@media screen and (max-width: 600px) {
+    #addUserForm {
+        padding: 15px;
+    }
+
+    #addUserForm h3 {
+        font-size: 18px;
+    }
+
+    #addUserForm input {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    #addUserForm button[type="submit"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-content {
+        padding: 20px;
+        margin-left: 0;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        background-color: white;
+        padding: 10px;
+    }
+
+    td {
+        text-align: left;
+        padding-left: 40%;
+        position: relative;
+    }
+
+    td::before {
+        position: absolute;
+        left: 10px;
+        top: 12px;
+        font-weight: bold;
+        content: attr(data-label);
+    }
+
+    .top-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-form {
+        margin-bottom: 10px;
+    }
+}
